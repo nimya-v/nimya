@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  TeamsChat
+  Created by Capgemini on 20/01/23.
+*/
+
+"Title" = "Teams Chat";
+"Default Message" = "Hello, World!";
+
+//Calender Page
+"Calendar Title" = "Calendar";
+"Go Setting" = "Go To Settings";
+"Add Event" = "Add Event";
+"Cal Access Title" = "Calendar Access Denied";
+"Cal Access Message" = "Please Allow Calendar Access In Settings";
+
+//Chat
+"Chat Title" = "Chat";
+"Chats Title" = "Chats";
+"Alert Message" = "Ups, something went wrong.";
+"Message" = "Message...";
+"Send" = "Send";
+
+//Action Sheet
+"Sheet Title" = "Attach Media";
+"Attach Photo" = "Attach Photo";
+"Sheet Message" = "What would you like to attach?";
+"Photo Message" = "Slect Photo from Library or Camera!";
+"Photo" = "Photo";
+"Video" = "Video";
+"Audio" = "Audio";
+"Camera" = "Camera";
+"Photo Library" = "Photo Library";
+"Camera Alert Message" = "Application is running in Simulator and it has no camera, to test this functionality please try to run this application on real device!";
+
+"Alert" = "Alert";
+"Ok" = "Ok";
+
+//Activity
+"Activity Title" = "Activity";
+
+//Teams
+"Teams Title" = "Teams";
+
+//Calls
+"Calls Title" = "Calls";
+"Calendar Title" = "Calendar";
+
+
+//SwiftUI
+"Event Title" = "Default Event";

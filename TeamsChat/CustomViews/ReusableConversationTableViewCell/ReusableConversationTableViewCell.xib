@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableConversationTableViewCell" rowHeight="70" id="KGk-i7-Jjw" customClass="ReusableConversationTableViewCell" customModule="TeamsChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="fv3-tV-CKc">
+                        <rect key="frame" x="12" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="D2w-0T-ic1"/>
+                            <constraint firstAttribute="width" secondItem="fv3-tV-CKc" secondAttribute="height" multiplier="1:1" id="Yrl-Vi-XmJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Ronak Sankhala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkt-MT-3Cu">
+                        <rect key="frame" x="79.999999999999986" y="12.000000000000002" width="163.66666666666663" height="21.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="You: Ping me once you back from lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgA-tl-9vB">
+                        <rect key="frame" x="80" y="37.666666666666657" width="228" height="33.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="avatarViewBackground"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:20 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K83-Z5-ZGD">
+                        <rect key="frame" x="251.66666666666666" y="12.000000000000002" width="56.333333333333343" height="21.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" name="avatarViewBackground"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZIg-bh-gWM">
+                        <rect key="frame" x="80" y="79" width="240" height="1"/>
+                        <color key="backgroundColor" name="hairlineColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1pO-6a-I98"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="K83-Z5-ZGD" firstAttribute="leading" secondItem="Jkt-MT-3Cu" secondAttribute="trailing" constant="8" id="1M1-r0-xp1"/>
+                    <constraint firstItem="fv3-tV-CKc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Mw-G5-tBD"/>
+                    <constraint firstItem="K83-Z5-ZGD" firstAttribute="top" secondItem="Jkt-MT-3Cu" secondAttribute="top" id="9Wk-qY-tlA"/>
+                    <constraint firstItem="fv3-tV-CKc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="BYJ-53-c8n"/>
+                    <constraint firstAttribute="bottom" secondItem="ZIg-bh-gWM" secondAttribute="bottom" id="Eye-Xh-2E4"/>
+                    <constraint firstAttribute="trailing" secondItem="HgA-tl-9vB" secondAttribute="trailing" constant="12" id="KWX-gZ-jB5"/>
+                    <constraint firstItem="Jkt-MT-3Cu" firstAttribute="leading" secondItem="fv3-tV-CKc" secondAttribute="trailing" constant="8" id="QRP-UR-3IO"/>
+                    <constraint firstItem="ZIg-bh-gWM" firstAttribute="top" secondItem="HgA-tl-9vB" secondAttribute="bottom" constant="8" id="W9m-k4-yUG"/>
+                    <constraint firstItem="Jkt-MT-3Cu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="qZo-qd-Chc"/>
+                    <constraint firstItem="HgA-tl-9vB" firstAttribute="leading" secondItem="Jkt-MT-3Cu" secondAttribute="leading" id="rrn-NF-dgp"/>
+                    <constraint firstItem="K83-Z5-ZGD" firstAttribute="bottom" secondItem="Jkt-MT-3Cu" secondAttribute="bottom" id="uVe-Ty-tkn"/>
+                    <constraint firstItem="HgA-tl-9vB" firstAttribute="top" secondItem="Jkt-MT-3Cu" secondAttribute="bottom" constant="4" id="uhO-0W-SF0"/>
+                    <constraint firstAttribute="trailing" secondItem="K83-Z5-ZGD" secondAttribute="trailing" constant="12" id="wIr-R0-Tdx"/>
+                    <constraint firstItem="ZIg-bh-gWM" firstAttribute="leading" secondItem="HgA-tl-9vB" secondAttribute="leading" id="wXP-wP-x2E"/>
+                    <constraint firstAttribute="trailing" secondItem="ZIg-bh-gWM" secondAttribute="trailing" id="zDY-Fi-hOk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="imgUserProfile" destination="fv3-tV-CKc" id="c5M-1n-I4c"/>
+                <outlet property="lblDateTime" destination="K83-Z5-ZGD" id="ZgS-g6-d9E"/>
+                <outlet property="lblLastMessage" destination="HgA-tl-9vB" id="clt-zy-ro7"/>
+                <outlet property="lblUserName" destination="Jkt-MT-3Cu" id="Ivs-Zt-v8P"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_profile" width="99" height="149"/>
+        <namedColor name="avatarViewBackground">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hairlineColor">
+            <color red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

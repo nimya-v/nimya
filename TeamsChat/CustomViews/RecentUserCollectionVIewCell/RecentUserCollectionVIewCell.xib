@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecentUserCollectionVIewCell" id="gTV-IL-0wX" customClass="RecentUserCollectionVIewCell" customModule="TeamsChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meJ-FJ-mwb">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="9mD-VI-2Mc">
+                                <rect key="frame" x="15" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9mD-VI-2Mc" secondAttribute="height" multiplier="1:1" id="a6D-he-vq8"/>
+                                    <constraint firstAttribute="width" constant="60" id="kdS-Wx-Lrh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ronak Sankhala" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-9p-FCf">
+                                <rect key="frame" x="8" y="76" width="74" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ngm-9p-FCf" secondAttribute="bottom" constant="8" id="1Fc-z8-5E7"/>
+                            <constraint firstItem="9mD-VI-2Mc" firstAttribute="top" secondItem="meJ-FJ-mwb" secondAttribute="top" constant="8" id="5Ot-uv-bf1"/>
+                            <constraint firstItem="Ngm-9p-FCf" firstAttribute="top" secondItem="9mD-VI-2Mc" secondAttribute="bottom" constant="8" id="avr-cw-RAq"/>
+                            <constraint firstItem="Ngm-9p-FCf" firstAttribute="leading" secondItem="meJ-FJ-mwb" secondAttribute="leading" constant="8" id="dCs-ez-XHS"/>
+                            <constraint firstItem="9mD-VI-2Mc" firstAttribute="centerX" secondItem="meJ-FJ-mwb" secondAttribute="centerX" id="hNs-E2-n7A"/>
+                            <constraint firstAttribute="trailing" secondItem="Ngm-9p-FCf" secondAttribute="trailing" constant="8" id="xmC-6C-XVi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="meJ-FJ-mwb" secondAttribute="trailing" id="HsV-tJ-nl7"/>
+                <constraint firstItem="meJ-FJ-mwb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mnT-iJ-258"/>
+                <constraint firstItem="meJ-FJ-mwb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="phf-fX-hXl"/>
+                <constraint firstAttribute="bottom" secondItem="meJ-FJ-mwb" secondAttribute="bottom" id="rlr-ur-x8j"/>
+            </constraints>
+            <connections>
+                <outlet property="imgRecentUser" destination="9mD-VI-2Mc" id="vAt-pz-Etn"/>
+                <outlet property="lblRecentUserName" destination="Ngm-9p-FCf" id="OoV-GW-evk"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="user_profile" width="99" height="149"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

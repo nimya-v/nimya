@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>508537454376-oelqdl759fers51pgrgv7rl7vv12kuhq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.508537454376-oelqdl759fers51pgrgv7rl7vv12kuhq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDskdOpzcRkPxZbtSVcoGP3NQxj7uDHHf0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>508537454376</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.capgemini.teamschat</string>
+	<key>PROJECT_ID</key>
+	<string>teamschat-59cdb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>teamschat-59cdb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:508537454376:ios:6c8f5e058be6a421f59a1d</string>
+</dict>
+</plist>
